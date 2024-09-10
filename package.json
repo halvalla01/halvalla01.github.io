@@ -1,0 +1,14 @@
+{
+  "name": "halvalla01.github.io",
+  "version": "1.0.0",
+  "description": "This is HalValla's portfolio website reposetory. The technologies and methods featured here will serve as the best I can do per now, and I strive to further my knowledge and ability in web development with every opportunity I get",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}
