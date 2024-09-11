@@ -1,0 +1,13 @@
+body{
+    background-color: #00B5C0;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    font-size: 3.5rem;
+    color: #FFB800;
+    text-shadow: 2px 2px 0 #000000;
+    -webkit-text-stroke-color: #a04e0c;
+    -webkit-text-stroke-width: 1px;
+}
