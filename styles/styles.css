@@ -43,6 +43,7 @@ body{
     margin: 2rem;
     background-color: #054b4e;
     display: block;
+    border-radius: 1rem;
 }
 
 .card h3{
