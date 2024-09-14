@@ -3,10 +3,8 @@
 body{
     background-color: #00B5C0;
 }
-
 .header{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-weight: 400;
     font-size: 4rem;
     color: #FFB800;
@@ -14,7 +12,6 @@ body{
     -webkit-text-stroke-color: #a04e0c;
     -webkit-text-stroke-width: 1px;
 }
-
 .container{
     background-color: #00646A;
     padding-top: 0.5rem;
@@ -23,8 +20,8 @@ body{
     padding-right: 1rem;
     margin: 1rem;
     display: block;
+    border-radius: 0.5rem;
 }
-
 .paragraph{
     color: white;
     font-size: 2rem;
@@ -33,11 +30,6 @@ body{
     margin: 1rem;
     text-align: center;
 }
-
-#containerCards{
-    display: flexbox;
-}
-
 .card{
     min-height: fit-content;
     margin: 2rem;
@@ -45,14 +37,16 @@ body{
     display: block;
     border-radius: 1rem;
 }
-
 .card h3{
     color: white;
     font-size: 2rem;
     padding: 2%;
+    text-align: center;
 }
 .card p{
     color: white;
     font-size: 1.5rem;
-    padding: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: inline-block;
 }
