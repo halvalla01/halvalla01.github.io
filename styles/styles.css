@@ -3,6 +3,9 @@
 body{
     background-color: #00B5C0;
 }
+a{
+    color: red;
+}
 .header{
     text-align: center;
     font-weight: 400;
