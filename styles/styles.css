@@ -53,3 +53,6 @@ a{
     padding-right: 2%;
     display: inline-block;
 }
+.centered{
+    text-align: center;
+}
