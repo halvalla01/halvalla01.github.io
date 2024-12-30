@@ -1,0 +1,15 @@
+body{
+    background-color:#00C0CC;
+}
+
+.header{
+    font-size: 1000%;
+    text-align: center;
+    color: #FFB800;
+    text-shadow: 
+    -1.5px -1.5px #000,
+    -1.5px 1.5px #000,
+    1.5px -1.5px #000,
+    1.5px 1.5px #000
+
+}
