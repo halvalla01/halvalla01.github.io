@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <section>
+        <section class="section" id="main-header-section">
             <nav class="nav">
                 <ul>
                     <li>
@@ -21,23 +21,56 @@
                         <a href="#link-socials">Socials</a>
                     </li>
                     <li>
-                        <a href="#link-store">Store</a>
+                        <a href="https://halvalla.gumroad.com/" target="_blank">Store</a>
                     </li>
                 </ul>
             </nav>
-        </section>
-        <section id="section-header">
             <h1 class="header header-main">HalValla</h1>
         </section>
     </header>
     <main>
         <section id="link-about">
             <h2 class="header header-secondary">About</h2>
-            <p class="paragraph paragraph-about">
+            <p class="paragraph paragraph-about shadowed">
                 HalValla is a Norwegian composer, delivering everything from lush, orchestral scores to punchy, electronic trailer tracks whilst also offering songwriting services based on your needs. He has extensive knowledge, capabilities and experience in the field.
             </p>
         </section>
+        <section class="section sect-contact">
+            <form class="contact-form shadowed" method="POST" action="#" id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+            <script>
+            document.getElementById('contactForm').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = {
+                    name: form.name.value,
+                    email: form.email.value,
+                    message: form.message.value
+                };
+                const response = await fetch('http://localhost:3001/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                if (response.ok) {
+                    alert('Message sent!');
+                    form.reset();
+                } else {
+                    alert('Failed to send message.');
+                }
+            });
+            </script>
+        </section>
     </main>
     <footer>
         

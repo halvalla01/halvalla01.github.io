@@ -1,38 +1,52 @@
-body{
-    background-color:#00C0CC;
-    text-align: center;
+body {
+  background-color: #00C0CC;
+  text-align: center;
 }
 
-
-.nav ul{
-    display: inline;
+.nav ul {
+  display: inline;
 }
 
-.header{
-    font-size: 7.5rem;
-    color: #FFB800;
-    font-family:'Lucida Sans', 'Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: 
-    -1px -1px #000,
-    -1px 1px #000,
-    1px -1px #000,
-    1px 1px #000
+.header {
+  font-size: 7.5rem;
+  color: #FFB800;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-shadow: -1px -1px #000, -1px 1px #000, 1px -1px #000, 1px 1px #000;
 }
 
-.header-secondary{
-    font-size: 4rem;
+.header-secondary {
+  font-size: 4rem;
 }
 
-p{
-    background-color: rgb(7, 109, 109);
-    color: white;
-    margin-left: 15%;
-    margin-right: 15%;
-    border-radius: 2rem;
-    padding: 2rem;
+.shadowed {
+  background-color: rgb(7, 109, 109);
+  color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 2rem;
+  padding: 2rem;
 }
 
-
-.paragraph-about{
-    font-size: 2.5rem;
+.paragraph-about {
+  font-size: 2.5rem;
 }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-form input {
+  align-self: center;
+  max-width: 25%;
+}
+.contact-form textarea {
+  align-self: center;
+  max-width: 25%;
+}
+.contact-form button {
+  align-self: center;
+  max-width: 25%;
+}
+
+/*# sourceMappingURL=main.css.map */
