@@ -8,14 +8,21 @@ body {
 }
 
 .header {
-  font-size: 7.5rem;
   color: #FFB800;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-shadow: -1px -1px #000, -1px 1px #000, 1px -1px #000, 1px 1px #000;
 }
 
-.header-secondary {
+.header1 {
+  font-size: 7.5rem;
+}
+
+.header2 {
   font-size: 4rem;
+}
+
+.header3 {
+  font-size: 3rem;
 }
 
 .shadowed {
