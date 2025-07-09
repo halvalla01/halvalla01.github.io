@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/compiled/main.css">
     <title>HalValla</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
                         <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#link-about">About</a>
+                        <a href="./pages/about.html">About</a>
                     </li>
                     <li>
                         <a href="#link-socials">Socials</a>
@@ -29,14 +29,10 @@
         </section>
     </header>
     <main>
-        <section id="link-about">
-            <h2 class="header header-secondary">About</h2>
-            <p class="paragraph paragraph-about shadowed">
-                HalValla is a Norwegian composer, delivering everything from lush, orchestral scores to punchy, electronic trailer tracks whilst also offering songwriting services based on your needs. He has extensive knowledge, capabilities and experience in the field.
-            </p>
-        </section>
-        <section class="section sect-contact">
+        
+        <section class="section sect-contact hidden">
             <form class="contact-form shadowed" method="POST" action="#" id="contactForm">
+                <h3>!!!THIS FORM DOES NOT WORK!!!</h3>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -48,28 +44,6 @@
 
                 <button type="submit">Send</button>
             </form>
-            <script>
-            document.getElementById('contactForm').addEventListener('submit', async function(e) {
-                e.preventDefault();
-                const form = e.target;
-                const data = {
-                    name: form.name.value,
-                    email: form.email.value,
-                    message: form.message.value
-                };
-                const response = await fetch('http://localhost:3001/contact', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(data)
-                });
-                if (response.ok) {
-                    alert('Message sent!');
-                    form.reset();
-                } else {
-                    alert('Failed to send message.');
-                }
-            });
-            </script>
         </section>
     </main>
     <footer>

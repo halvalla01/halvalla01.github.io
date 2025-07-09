@@ -49,4 +49,8 @@ body {
   max-width: 25%;
 }
 
+.hidden {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */
