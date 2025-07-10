@@ -1,5 +1,5 @@
 body {
-  background-color: #69b5d3;
+  background-color: #7ba5d4;
   text-align: center;
 }
 
@@ -8,7 +8,7 @@ body {
 }
 
 .header {
-  color: #FFB800;
+  color: #e4be44;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-shadow: -1px -1px #000, -1px 1px #000, 1px -1px #000, 1px 1px #000;
 }
@@ -26,7 +26,7 @@ body {
 }
 
 .shadowed {
-  background-color: #4c8ea8;
+  background-color: hsl(from #7ba5d4 h s calc(l - 15));
   color: white;
   margin-left: 15%;
   margin-right: 15%;

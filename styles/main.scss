@@ -1,7 +1,7 @@
-$primary-color: #69b5d3;
-$secondary-color: #FFB800;
+$primary-color: #7ba5d4;
+$secondary-color: #e4be44;
 $shadow-color: #000;
-$background-color: #4c8ea8;
+$background-color: hsl(from $primary-color h s calc(l - 15));
 $text-color: white;
 
 body {
